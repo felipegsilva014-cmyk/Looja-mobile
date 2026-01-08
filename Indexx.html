@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🛒 Minha Loja</h1>
+</header>
+
+<main>
+  <section class="produtos">
+    <div class="produto">
+      <img src="https://via.placeholder.com/150">
+      <h3>Celular</h3>
+      <p class="preco">R$ 1200</p>
+      <button onclick="adicionarCarrinho('Celular',1200)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/150">
+      <h3>Notebook</h3>
+      <p class="preco">R$ 3500</p>
+      <button onclick="adicionarCarrinho('Notebook',3500)">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/150">
+      <h3>Fone de Ouvido</h3>
+      <p class="preco">R$ 250</p>
+      <button onclick="adicionarCarrinho('Fone',250)">Adicionar</button>
+    </div>
+  </section>
+
+  <aside class="carrinho">
+    <h2>🛍️ Carrinho</h2>
+    <ul id="lista"></ul>
+    <p class="total">Total: R$ <span id="total">0</span></p>
+    <button class="finalizar">Finalizar Compra</button>
+  </aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
